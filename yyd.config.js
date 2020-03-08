@@ -4,9 +4,17 @@ module.exports = {
   repository: 'yyd',
   // tag
   tag: pkg.version,
-  // 推送的
-  pushHost: '',
-  pushPrefix: 'jackness1208',
+
+  push: {
+    default: {
+      host: '',
+      prefix: 'jackness1208'
+    },
+    yy: {
+      host: 'harbor.yy.com',
+      prefix: 'front_end'
+    }
+  },
   // 自动 更新 history
   rewriteHistory: true
 
